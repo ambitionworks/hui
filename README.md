@@ -1,7 +1,7 @@
 # Hui
 (pronounced: hū-ē, **hyoo**-ee or like [Huey Lewis and The News](https://www.youtube.com/watch?v=LB5YkmjalDg))
 
-A minimal set of Laravel Blade components to assist in building composable and consistent server-rendered UI.
+A minimal collection of Laravel Blade components to assist in building composable and consistent server-rendered UI.
 
 ## Installation
 
@@ -18,3 +18,5 @@ You can then run the install command:
 ```bash
 php artisan hui:install
 ```
+
+## Configuration
