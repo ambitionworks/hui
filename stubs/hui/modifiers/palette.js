@@ -6,7 +6,7 @@ module.exports = plugin(function({ addComponents, theme }) {
             backgroundColor: theme('colors.blue.600'),
             borderColor: theme('colors.transparent'),
             color: theme('colors.white'),
-            '&:hover:not(.hui-card, .hui-badge, .hui-alert)': {
+            '&.hui-button:hover': {
                 backgroundColor: theme('colors.white'),
                 borderColor: theme('colors.blue.600'),
                 color: theme('colors.blue.600'),
@@ -16,7 +16,7 @@ module.exports = plugin(function({ addComponents, theme }) {
             backgroundColor: theme('colors.black'),
             borderColor: theme('colors.transparent'),
             color: theme('colors.white'),
-            '&:hover:not(.hui-card, .hui-badge, .hui-alert)': {
+            '&.hui-button:hover': {
                 backgroundColor: theme('colors.white'),
                 borderColor: theme('colors.black'),
                 color: theme('colors.black'),
@@ -26,7 +26,7 @@ module.exports = plugin(function({ addComponents, theme }) {
             backgroundColor: theme('colors.yellow.400'),
             borderColor: theme('colors.transparent'),
             color: theme('colors.white'),
-            '&:hover:not(.hui-card, .hui-badge, .hui-alert)': {
+            '&.hui-button:hover': {
                 backgroundColor: theme('colors.white'),
                 borderColor: theme('colors.yellow.400'),
                 color: theme('colors.yellow.400'),
@@ -36,7 +36,7 @@ module.exports = plugin(function({ addComponents, theme }) {
             backgroundColor: theme('colors.red.600'),
             borderColor: theme('colors.transparent'),
             color: theme('colors.white'),
-            '&:hover:not(.hui-card, .hui-badge, .hui-alert)': {
+            '&.hui-button:hover': {
                 backgroundColor: theme('colors.white'),
                 borderColor: theme('colors.red.600'),
                 color: theme('colors.red.600'),
