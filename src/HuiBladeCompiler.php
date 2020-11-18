@@ -37,6 +37,6 @@ class HuiBladeCompiler extends BladeCompiler
     {
         $classes = implode("\n", app('hui')->dump());
 
-        return $contents."<?php /* {$classes} */ ?>";
+        return $contents."<?php /* HUIPURGE */ /* {$classes} */ ?>";
     }
 }

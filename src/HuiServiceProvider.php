@@ -54,7 +54,7 @@ class HuiServiceProvider extends ServiceProvider
             $values = explode(',', $expression);
             $format = array_shift($values);
 
-            return '<?php app("hui")->track(sprintf(' . $format . ', ' . implode(', ', $values) . ')); ?>';
+            return '<?php /* HUITRACK */ app("hui")->track(sprintf(' . $format . ', ' . implode(', ', $values) . ')); ?>';
         });
     }
 
