@@ -45,6 +45,11 @@ class HuiServiceProvider extends ServiceProvider
 
     protected function bootHui()
     {
+        Blade::directive('huislot', function ($expression) {
+            $expression = str_replace(['\'', '"'], '', $expression);
+            return '<?php /* HUISLOT */ if(isset($'.$expression.')) { $__env->slot(\''.$expression.'\'); echo e($'.$expression.'); $__env->endSlot(); } ?>';
+        });
+
         Blade::directive('hui', function ($expression) {
             $values = explode(',', $expression);
             $format = array_shift($values);
