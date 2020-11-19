@@ -19,4 +19,4 @@ You can then run the install command:
 php artisan hui:install
 ```
 
-## Configuration
+## [Documentation](https://hui.ambition.works/docs/getting-started)
