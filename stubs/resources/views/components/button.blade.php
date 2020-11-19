@@ -19,7 +19,7 @@
 
 <button {{ $attributes->merge(['class' => 'hui-button'.$class]) }}{{ $disabled ? ' disabled' : '' }}>
     @if ($loading)
-    <x-loading />
+    <x-hui-loading />
     @endif
     {{ $slot }}
 </button>
