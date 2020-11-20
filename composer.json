@@ -1,7 +1,7 @@
 {
     "name": "ambitionworks/hui",
     "description": "A set of Blade components for creating consistent, composable interfaces.",
-    "keywords": ["laravel", "blade", "components"],
+    "keywords": ["laravel", "blade", "components", "tailwind"],
     "require": {
         "php": "^7.3|^8.0",
         "laravel/framework": "^8.0"
