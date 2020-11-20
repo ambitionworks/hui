@@ -1,4 +1,4 @@
-@props(['handle' => '', 'position' => 'bl', 'hover' => false])
+@props(['handle' => '', 'position' => 'bl', 'contentClass' => '', 'hover' => false])
 
 @php
     switch ($position) {
@@ -38,7 +38,7 @@
 
 <div x-data="{ open: false }" {!! $leaving !!} {{ $attributes->merge(['class' => 'hui-popover relative']) }}>
     <div {!! $trigger !!} role="button" class="hui-popover__handle">{{ $handle }}</div>
-    <div x-show="open" class="hui-popover__content z-10 {{ $positioning }}">
+    <div x-show="open" class="hui-popover__content z-10 {{ $positioning }}{{ $contentClass ? ' '.$contentClass : '' }}">
         {{ $slot }}
     </div>
 </div>
