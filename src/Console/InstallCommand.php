@@ -31,8 +31,7 @@ class InstallCommand extends Command
         // NPM Packages...
         $this->updateNodePackages(function ($packages) {
             return [
-                'postcss-import' => '^12.0.1',
-                'tailwindcss' => '^1.9.0',
+                'tailwindcss' => 'npm:@tailwindcss/postcss7-compat@^2.0.1',
             ] + $packages;
         });
 

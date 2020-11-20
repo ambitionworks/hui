@@ -4,7 +4,7 @@ module.exports = plugin(function({ addComponents, theme }) {
     addComponents({
         '.hui-badge': {
             borderRadius: theme('borderRadius.full'),
-            borderWidth: theme('borderWidth.default'),
+            borderWidth: theme('borderWidth.DEFAULT'),
             borderColor: theme('colors.gray.300'),
             backgroundColor: theme('colors.white'),
             fontSize: theme('fontSize.sm'),

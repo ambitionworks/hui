@@ -3,8 +3,8 @@ const plugin = require('tailwindcss/plugin')
 module.exports = plugin(function({ addComponents, theme }) {
     addComponents({
         '.hui-button': {
-            borderRadius: theme('borderRadius.default'),
-            borderWidth: theme('borderWidth.default'),
+            borderRadius: theme('borderRadius.DEFAULT'),
+            borderWidth: theme('borderWidth.DEFAULT'),
             borderColor: theme('colors.gray.300'),
             backgroundColor: theme('colors.white'),
             transitionProperty: theme('transitionProperty.all'),
