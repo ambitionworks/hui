@@ -1,20 +1,23 @@
-@props(['size' => 12])
+@props(['size' => ''])
 @inject('hui', 'hui')
 
 @php
+    $width = '';
     $widthConverter = function ($size) use ($hui) {
         return $hui->track($size !== 12 ? 'w-'.$size.'/12' : ' w-full');
     };
-    if (is_array($size)) {
-        if (isset($size[0])) {
-            $width = $widthConverter($size[0]);
-            unset($size[0]);
+    if (!empty($size)) {
+        if (is_array($size)) {
+            if (isset($size[0])) {
+                $width = $widthConverter($size[0]);
+                unset($size[0]);
+            }
+            foreach ($size as $breakpoint => $size) {
+                $width .= $hui->track(" $breakpoint:".$widthConverter($size));
+            }
+        } else {
+            $width = $widthConverter($size);
         }
-        foreach ($size as $breakpoint => $size) {
-            $width .= $hui->track(" $breakpoint:".$widthConverter($size));
-        }
-    } else {
-        $width = $widthConverter($size);
     }
 @endphp
 
