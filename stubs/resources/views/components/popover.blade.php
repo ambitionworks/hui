@@ -3,28 +3,28 @@
 @php
     switch ($position) {
         case 'rc':
-            $positioning = ' ml-2 absolute left-full top-1/2 transform origin-right -translate-y-1/2';
+            $positioning = ' absolute left-full top-1/2 transform origin-right -translate-y-1/2';
             break;
         case 'lc':
-            $positioning = ' mr-2 absolute right-full top-1/2 transform origin-left -translate-y-1/2';
+            $positioning = ' absolute right-full top-1/2 transform origin-left -translate-y-1/2';
             break;
         case 'tl':
-            $positioning = ' mb-2 absolute bottom-full left-0 transform origin-bottom-left';
+            $positioning = ' absolute bottom-full left-0 transform origin-bottom-left';
             break;
         case 'tc':
-            $positioning = ' mb-2 absolute bottom-full right-1/2 transform origin-bottom translate-x-1/2';
+            $positioning = ' absolute bottom-full right-1/2 transform origin-bottom translate-x-1/2';
             break;
         case 'tr':
-            $positioning = ' mb-2 absolute bottom-full right-0 transform origin-bottom-right';
+            $positioning = ' absolute bottom-full right-0 transform origin-bottom-right';
             break;
         case 'bl':
-            $positioning = ' mt-2 absolute left-0 transform origin-top-left';
+            $positioning = ' absolute left-0 transform origin-top-left';
             break;
         case 'bc':
-            $positioning = ' mt-2 absolute right-1/2 transform origin-top translate-x-1/2';
+            $positioning = ' absolute right-1/2 transform origin-top translate-x-1/2';
             break;
         case 'br':
-            $positioning = ' mt-2 absolute right-0 transform origin-top-right';
+            $positioning = ' absolute right-0 transform origin-top-right';
     }
 
     if ($hover) {
