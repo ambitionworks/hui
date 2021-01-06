@@ -18,10 +18,8 @@ class HuiServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        if (! $this->app->runningInConsole()) {
-            $this->configureComponents();
-            $this->bootHui();
-        }
+        $this->configureComponents();
+        $this->bootHui();
 
         $this->commands([
             Console\InstallCommand::class,
